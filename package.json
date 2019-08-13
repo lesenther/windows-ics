@@ -1,0 +1,15 @@
+{
+  "name": "windows-ics",
+  "version": "1.0.0",
+  "description": "Enable/disable Internet Connection Sharing (ICS) for network interfaces",
+  "main": "index.js",
+  "scripts": {
+    "install": "git clone https://github.com/mikefrobbins/PowerShell.git node_modules/PowerShell",
+    "test": "mocha tests/*.test.js --timeout 10000"
+  },
+  "author": "Logan Esenther (logan@cal.berkeley.edu)",
+  "license": "ISC",
+  "dependencies": {
+    "node-powershell": "^4.0.0"
+  }
+}
