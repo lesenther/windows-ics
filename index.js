@@ -1,8 +1,8 @@
 const { join } = require('path');
 
 const Powershell = require('node-powershell');
-
-const powerShellPath = join(__dirname, '/node_modules/PowerShell/MrToolkit/Public/');
+const node_modules = require('node_modules-path');
+const powerShellPath = join(node_modules(), '/powershell/MrToolkit/Public/');
 const powerShellScripts = require('./modules/loadScripts')(powerShellPath);
 
 if (process.platform !== 'win32') {
